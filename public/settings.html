@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Assistant - Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Settings</h1>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="chats.html">Chats</a>
+    <a href="manage_agents.html">Manage Agents</a>
+    <a href="login.html">Login/Logout</a>
+  </nav>
+  <main>
+    <form id="settings-form">
+      <label for="theme">Theme:</label>
+      <select id="theme" name="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+      <br>
+      <label for="notifications">Enable notifications:</label>
+      <input type="checkbox" id="notifications" name="notifications">
+      <br>
+      <button type="submit">Save Settings</button>
+    </form>
+  </main>
+  <script src="js/settings.js"></script>
+</body>
+</html>
