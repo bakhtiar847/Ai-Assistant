@@ -10,7 +10,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-mongoose.connect('mongodb://localhost/ai_assistant');
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
