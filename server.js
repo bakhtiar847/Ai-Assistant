@@ -52,6 +52,7 @@ authRouter.post('/logout', (req, res) => {
   req.logout();
   res.redirect('/login.html');
 });
+app.get('/', (req, res) => {res.redirect("/login.html")})
 app.use('/auth', authRouter);
 
 // ====== Agents Routes ======
